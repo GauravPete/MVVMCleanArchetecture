@@ -77,6 +77,14 @@ dependencies {
     implementation(libs.retrofit)
     // gson converter
     implementation(libs.converter.gson)
+    //exo Player
+    implementation(libs.exoplayer.core)
+    implementation(libs.exoplayer.ui)
+    implementation(libs.exoplayer.smoothstreaming)
+
+    //For Coil Compose App
+    implementation(libs.coil.compose)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
