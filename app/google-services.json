@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "764407499635",
+    "project_id": "mvvm-clean-e0ab9",
+    "storage_bucket": "mvvm-clean-e0ab9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764407499635:android:d9285da3c63b50a518d306",
+        "android_client_info": {
+          "package_name": "com.mvvm.clean.mvvmcleanarchitecture"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMUEMYgiQLYOyi5H_wY8lBIxoh_qEyFqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

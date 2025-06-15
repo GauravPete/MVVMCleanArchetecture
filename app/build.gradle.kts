@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.dagger.hilt)
     alias(libs.plugins.kotlin.ksp)
+    id("com.google.gms.google-services")
 
 }
 
@@ -52,6 +53,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    //viewModel
     // ViewModel
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     // ViewModel utilities for Compose
@@ -77,14 +79,6 @@ dependencies {
     implementation(libs.retrofit)
     // gson converter
     implementation(libs.converter.gson)
-    //exo Player
-    implementation(libs.exoplayer.core)
-    implementation(libs.exoplayer.ui)
-    implementation(libs.exoplayer.smoothstreaming)
-
-    //For Coil Compose App
-    implementation(libs.coil.compose)
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -97,4 +91,7 @@ dependencies {
 
     // optional - Test helpers for Lifecycle runtime
     testImplementation(libs.androidx.lifecycle.runtime.testing)
+
+    implementation(platform("com.google.firebase:firebase-bom:33.15.0"))
+    implementation("com.google.firebase:firebase-analytics")
 }
