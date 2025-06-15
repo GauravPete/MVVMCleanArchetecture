@@ -92,6 +92,6 @@ dependencies {
     // optional - Test helpers for Lifecycle runtime
     testImplementation(libs.androidx.lifecycle.runtime.testing)
 
-    implementation(libs.firebase.bom)
+    implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.analytics)
 }
