@@ -1,4 +1,4 @@
-package com.mvvm.clean.mvvmcleanarchitecture
+package com.mvvm.clean.mvvmcleanarchitecture.presntaion.Ui.screen
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -22,6 +22,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.mvvm.clean.mvvmcleanarchitecture.presntaion.Ui.compose.LazyListCompose
 import com.mvvm.clean.mvvmcleanarchitecture.presntaion.viewmodel.PhotoListViewModel
 import com.mvvm.clean.mvvmcleanarchitecture.ui.theme.MVVMCleanArchitectureTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -33,8 +34,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MVVMCleanArchitectureTheme {
-
-                App()
+                LazyListCompose()
+                //App()
 
             }
         }
@@ -97,6 +98,7 @@ fun App(viewModel: PhotoListViewModel = viewModel<PhotoListViewModel>()) {
                                     )
                                 )
                             ),
+
                         color = Color.White
                     )
                 }
