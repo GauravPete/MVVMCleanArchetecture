@@ -9,10 +9,13 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -20,9 +23,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.mvvm.clean.mvvmcleanarchitecture.presntaion.Ui.compose.LazyListCompose
 import com.mvvm.clean.mvvmcleanarchitecture.presntaion.viewmodel.PhotoListViewModel
 import com.mvvm.clean.mvvmcleanarchitecture.ui.theme.MVVMCleanArchitectureTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -34,11 +39,52 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MVVMCleanArchitectureTheme {
-                LazyListCompose()
-                //App()
+                // LazyListCompose()
+                Scaffold(topBar = { AppHeader() }) { paddingValues ->
+                    Box() {
+                        AppHeader()
+                        Box(
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .padding(paddingValues)
+                        ) {
+                            App()
+                        }
+                    }
+
+                }
+
+
 
             }
         }
+    }
+}
+
+@Composable
+fun AppHeader() {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(
+                brush = Brush.verticalGradient(
+                    listOf(
+                        Color(0xFF6B459B),
+                        Color(0xFF330B96)
+                    )
+                )
+            )
+            .height(60.dp),
+        contentAlignment = Alignment.Center
+    ) {
+        Text(
+            text = "Photo List",
+            color = Color.White,
+            modifier = Modifier.wrapContentSize(),
+            textAlign = TextAlign.Center,
+            fontSize = 20.sp,
+            fontWeight = FontWeight.W500
+        )
     }
 }
 
