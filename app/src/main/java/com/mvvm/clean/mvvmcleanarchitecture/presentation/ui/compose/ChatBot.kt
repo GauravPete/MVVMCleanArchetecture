@@ -102,7 +102,7 @@ fun MessageItem(message: MessageModel) {
 }
 
 @Composable
-fun MessageInput(modifier: Modifier = Modifier, onMessageSend: (String) -> Unit) {
+fun MessageInput(onMessageSend: (String) -> Unit) {
     var message by remember { mutableStateOf("") }
     Row(
         modifier = Modifier.padding(10.dp),
