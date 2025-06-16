@@ -78,6 +78,11 @@ dependencies {
     // retrofit
     implementation(libs.retrofit)
     // gson converter
+    //Firebase Gemini sdk
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.ai)
+    implementation(platform(libs.firebase.bom))
+
     implementation(libs.converter.gson)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -92,6 +97,5 @@ dependencies {
     // optional - Test helpers for Lifecycle runtime
     testImplementation(libs.androidx.lifecycle.runtime.testing)
 
-    implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.analytics)
+
 }
