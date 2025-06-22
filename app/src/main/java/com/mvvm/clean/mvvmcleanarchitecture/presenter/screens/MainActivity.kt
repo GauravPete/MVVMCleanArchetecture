@@ -1,18 +1,19 @@
-package com.mvvm.clean.mvvmcleanarchitecture
+package com.mvvm.clean.mvvmcleanarchitecture.presenter.screens
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import com.mvvm.clean.mvvmcleanarchitecture.presenter.Nav
 import com.mvvm.clean.mvvmcleanarchitecture.ui.theme.MVVMCleanArchitectureTheme
 
-class MainActivity : ComponentActivity() {
+class MainActivity() : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             MVVMCleanArchitectureTheme {
-
+                Nav()
             }
         }
     }
