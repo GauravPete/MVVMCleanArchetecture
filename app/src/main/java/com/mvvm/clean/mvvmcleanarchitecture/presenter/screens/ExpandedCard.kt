@@ -59,7 +59,7 @@ fun ExpandedCard(navController: NavHostController) {
                 .padding(16.dp)
                 .animateContentSize(
                     animationSpec = tween(
-                        durationMillis = 100,
+                        durationMillis = 300,
                         easing = LinearOutSlowInEasing
                     )
                 )
