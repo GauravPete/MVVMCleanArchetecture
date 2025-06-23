@@ -59,7 +59,12 @@ fun ListItem(item: String, navController: NavHostController) {
             .fillMaxWidth()
             .height(70.dp)
             .padding(8.dp)
-            .clickable { navController.navigate("TextField") }) {
+            .clickable {
+                if (item == "Text Field") navController.navigate("TextField")
+                else if (item == "Expanded Card") navController.navigate("ExpandedCard")
+            },
+    )
+    {
         Row(
             modifier = Modifier.fillMaxSize(),
             horizontalArrangement = Arrangement.Center,
@@ -80,7 +85,7 @@ fun ListItem(item: String, navController: NavHostController) {
 fun getListData(): List<String> {
     return listOf(
         "Text Field",
-        "Item 2",
+        "Expanded Card",
         "Item 3",
         "Item 4",
         "Item 5",

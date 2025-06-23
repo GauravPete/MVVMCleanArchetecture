@@ -5,6 +5,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.AppScreen
+import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.ExpandedCard
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.TextField_demo
 
 @Composable
@@ -13,6 +14,7 @@ fun Nav() {
     NavHost(navController = navController, startDestination = "MainScreen") {
         composable("MainScreen") { AppScreen(navController) }
         composable("TextField") { TextField_demo(navController) }
+        composable("ExpandedCard") { ExpandedCard(navController) }
     }
 
 }
