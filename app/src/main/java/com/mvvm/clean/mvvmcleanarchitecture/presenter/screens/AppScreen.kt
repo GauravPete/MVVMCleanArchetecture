@@ -66,6 +66,8 @@ fun ListItem(item: String, navController: NavHostController) {
                     navController.navigate("CoilImage")
                 } else if (item == "Password Text Field") {
                     navController.navigate("PasswordTextField")
+                } else if (item == "Gradient Button") {
+                    navController.navigate("GradientButton")
                 }
             },
     )
@@ -93,7 +95,7 @@ fun getListData(): List<String> {
         "Expanded Card",
         "Coil Image lib",
         "Password Text Field",
-        "Item 5",
+        "Gradient Button",
         "Item 6",
         "Item 7",
         "Item 8",
