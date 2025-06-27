@@ -55,7 +55,8 @@ dependencies {
     implementation(libs.androidx.material3)
     //Navigation
     implementation(libs.androidx.navigation.compose)
-    //viewModel
+    //Coil
+    implementation(libs.coil.compose)
     // ViewModel
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     // ViewModel utilities for Compose

@@ -62,6 +62,11 @@ fun ListItem(item: String, navController: NavHostController) {
             .clickable {
                 if (item == "Text Field") navController.navigate("TextField")
                 else if (item == "Expanded Card") navController.navigate("ExpandedCard")
+                else if (item == "Coil Image lib") {
+                    navController.navigate("CoilImage")
+                } else if (item == "Password Text Field") {
+                    navController.navigate("PasswordTextField")
+                }
             },
     )
     {
@@ -86,8 +91,8 @@ fun getListData(): List<String> {
     return listOf(
         "Text Field",
         "Expanded Card",
-        "Item 3",
-        "Item 4",
+        "Coil Image lib",
+        "Password Text Field",
         "Item 5",
         "Item 6",
         "Item 7",
