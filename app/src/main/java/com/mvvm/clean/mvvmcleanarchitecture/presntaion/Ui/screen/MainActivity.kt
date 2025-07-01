@@ -28,6 +28,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.mvvm.clean.mvvmcleanarchitecture.presntaion.Ui.compose.ListItmeCompose
 import com.mvvm.clean.mvvmcleanarchitecture.presntaion.viewmodel.PhotoListViewModel
 import com.mvvm.clean.mvvmcleanarchitecture.ui.theme.MVVMCleanArchitectureTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -53,8 +54,6 @@ class MainActivity : ComponentActivity() {
                     }
 
                 }
-
-
 
             }
         }
@@ -132,21 +131,22 @@ fun App(viewModel: PhotoListViewModel = viewModel<PhotoListViewModel>()) {
             )
             {
                 items(list.value.photoSizeList.size) {
-                    Text(
-                        text = list.value.photoSizeList[it].author,
-                        modifier = Modifier
-                            .fillParentMaxWidth()
-                            .background(
-                                brush = Brush.horizontalGradient(
-                                    listOf(
-                                        Color(0xFF6B459B),
-                                        Color(0xFF330B96)
-                                    )
-                                )
-                            ),
+                    ListItmeCompose(list.value.photoSizeList[it])
+                    /* Text(
+                         text = list.value.photoSizeList[it].author,
+                         modifier = Modifier
+                             .fillParentMaxWidth()
+                             .background(
+                                 brush = Brush.horizontalGradient(
+                                     listOf(
+                                         Color(0xFF6B459B),
+                                         Color(0xFF330B96)
+                                     )
+                                 )
+                             ),
 
-                        color = Color.White
-                    )
+                         color = Color.White
+                     )*/
                 }
             }
 
