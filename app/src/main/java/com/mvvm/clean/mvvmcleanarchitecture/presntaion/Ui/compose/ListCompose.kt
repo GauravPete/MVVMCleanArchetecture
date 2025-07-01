@@ -43,7 +43,7 @@ fun ListItmeCompose(photoItme: PhotoSize_domain) {
                     .crossfade(true)
                     .size(
                         Size(
-                            width = 600, height = 900
+                            width = 600, height = 600
                         )
                     )
                     .build(),
