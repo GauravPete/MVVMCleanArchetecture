@@ -132,21 +132,6 @@ fun App(viewModel: PhotoListViewModel = viewModel<PhotoListViewModel>()) {
             {
                 items(list.value.photoSizeList.size) {
                     ListItmeCompose(list.value.photoSizeList[it])
-                    /* Text(
-                         text = list.value.photoSizeList[it].author,
-                         modifier = Modifier
-                             .fillParentMaxWidth()
-                             .background(
-                                 brush = Brush.horizontalGradient(
-                                     listOf(
-                                         Color(0xFF6B459B),
-                                         Color(0xFF330B96)
-                                     )
-                                 )
-                             ),
-
-                         color = Color.White
-                     )*/
                 }
             }
 

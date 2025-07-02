@@ -56,21 +56,21 @@ fun ListItmeCompose(photoItme: PhotoSize_domain) {
             Column(modifier = Modifier.weight(2f)) {
                 Text(
                     text = "Author: ${photoItme.author}",
-                    modifier = Modifier.padding(8.dp),
+                    modifier = Modifier.padding(4.dp),
                     color = Color.Black,
                     fontSize = 16.sp,
                     fontWeight = androidx.compose.ui.text.font.FontWeight.Bold
                 )
                 Text(
                     text = "Height: ${photoItme.height}",
-                    modifier = Modifier.padding(8.dp),
+                    modifier = Modifier.padding(4.dp),
                     color = Color.Black,
                     fontSize = 16.sp,
                     fontWeight = androidx.compose.ui.text.font.FontWeight.Bold
                 )
                 Text(
                     text = "Width: ${photoItme.width}",
-                    modifier = Modifier.padding(8.dp),
+                    modifier = Modifier.padding(4.dp),
                     color = Color.Black,
                     fontSize = 16.sp,
                     fontWeight = androidx.compose.ui.text.font.FontWeight.Bold
