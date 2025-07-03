@@ -38,8 +38,8 @@ fun CustomIndicatorCanvas(
     maxIndicatorValue: Int = 100,
     backgroundIndicatorColor: Color = Color.LightGray,
     backgroundIndicatorStrokeWidth: Float = 100f,
-    forgroundIndicatorColor: Color = MaterialTheme.colorScheme.primary,
-    forgroundIndicatorStrokeWidth: Float = 100f,
+    foregroundIndicatorColor: Color = MaterialTheme.colorScheme.primary,
+    foregroundIndicatorStrokeWidth: Float = 100f,
     bigFontSize: TextUnit = MaterialTheme.typography.headlineLarge.fontSize,
     bigTextColor: Color = Color.Black,
     bigTextSuffix: String = "GB",
@@ -77,11 +77,11 @@ fun CustomIndicatorCanvas(
                     indicatorColor = backgroundIndicatorColor,
                     indicatorStrokeWidth = backgroundIndicatorStrokeWidth
                 )
-                forgroundIndicator(
+                foregroundIndicator(
                     sweepAngle = sweepAngle,
                     componentSize = componentSize,
-                    indicatorColor = forgroundIndicatorColor,
-                    indicatorStrokeWidth = forgroundIndicatorStrokeWidth
+                    indicatorColor = foregroundIndicatorColor,
+                    indicatorStrokeWidth = foregroundIndicatorStrokeWidth
                 )
             },
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -123,7 +123,7 @@ fun DrawScope.backgroundIndicator(
     )
 }
 
-fun DrawScope.forgroundIndicator(
+fun DrawScope.foregroundIndicator(
     sweepAngle: Float = 0f,
     componentSize: Size,
     indicatorColor: Color,
