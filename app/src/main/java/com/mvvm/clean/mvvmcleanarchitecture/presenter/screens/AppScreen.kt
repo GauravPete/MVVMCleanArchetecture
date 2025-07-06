@@ -72,6 +72,8 @@ fun ListItem(item: String, navController: NavHostController) {
                     navController.navigate("MaxCharTextField")
                 } else if (item == "Background Indicator") {
                     navController.navigate("BackgroundIndicator")
+                } else if (item == "Filter list Screen") {
+                    navController.navigate("FilterList")
                 }
             },
     )
@@ -102,7 +104,7 @@ fun getListData(): List<String> {
         "Gradient Button",
         "Max Char Text Field",
         "Background Indicator",
-        "Item 8",
+        "Filter list Screen",
         "Item 9",
         "Item 10"
     )

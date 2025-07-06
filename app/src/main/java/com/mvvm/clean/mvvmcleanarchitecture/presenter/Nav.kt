@@ -8,6 +8,7 @@ import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.AppScreen
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.BackgroundIndicator
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.CoilImageLib
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.ExpandedCard
+import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.FilterListScreen
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.GradientButtons
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.MaxCharLimitTextField
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.PasswordTextField
@@ -25,6 +26,7 @@ fun Nav() {
         composable("GradientButton") { GradientButtons() }
         composable("MaxCharTextField") { MaxCharLimitTextField() }
         composable("BackgroundIndicator") { BackgroundIndicator() }
+        composable("FilterList") { FilterListScreen() }
     }
 
 }

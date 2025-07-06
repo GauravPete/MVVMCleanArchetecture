@@ -78,6 +78,7 @@ dependencies {
     //Dagger-hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
+
     // retrofit
     implementation(libs.retrofit)
     // gson converter
@@ -85,6 +86,15 @@ dependencies {
     implementation(libs.firebase.analytics)
     implementation(libs.firebase.ai)
     implementation(platform(libs.firebase.bom))
+
+    //ExoPlayer
+    /*implementation(libs.exoplayer.core)
+    implementation(libs.exoplayer.ui)
+    implementation(libs.exoplayer.smoothstreaming)*/
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.media3.exoplayer.dash)
+    implementation(libs.androidx.media3.ui)
+    implementation(libs.androidx.media3.ui.compose)
 
     implementation(libs.converter.gson)
     testImplementation(libs.junit)
