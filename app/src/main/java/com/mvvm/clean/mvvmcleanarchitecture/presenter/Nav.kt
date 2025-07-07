@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.AnimatedCountDown
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.AppScreen
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.BackgroundIndicator
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.CoilImageLib
@@ -27,6 +28,7 @@ fun Nav() {
         composable("MaxCharTextField") { MaxCharLimitTextField() }
         composable("BackgroundIndicator") { BackgroundIndicator() }
         composable("FilterList") { FilterListScreen() }
+        composable("AnimatedCoundDown") { AnimatedCountDown() }
     }
 
 }

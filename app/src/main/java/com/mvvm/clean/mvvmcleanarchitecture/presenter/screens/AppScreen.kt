@@ -74,6 +74,8 @@ fun ListItem(item: String, navController: NavHostController) {
                     navController.navigate("BackgroundIndicator")
                 } else if (item == "Filter list Screen") {
                     navController.navigate("FilterList")
+                } else if (item == "Animated Count Down") {
+                    navController.navigate("AnimatedCoundDown")
                 }
             },
     )
@@ -105,7 +107,7 @@ fun getListData(): List<String> {
         "Max Char Text Field",
         "Background Indicator",
         "Filter list Screen",
-        "Item 9",
+        "Animated Count Down",
         "Item 10"
     )
 }
