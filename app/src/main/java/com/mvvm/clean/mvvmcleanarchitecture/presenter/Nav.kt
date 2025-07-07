@@ -12,6 +12,7 @@ import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.ExpandedCard
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.FilterListScreen
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.GradientButtons
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.MaxCharLimitTextField
+import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.OTPScreen
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.PasswordTextField
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.TextField_demo
 
@@ -29,6 +30,7 @@ fun Nav() {
         composable("BackgroundIndicator") { BackgroundIndicator() }
         composable("FilterList") { FilterListScreen() }
         composable("AnimatedCoundDown") { AnimatedCountDown() }
+        composable("OTPScreen") { OTPScreen() }
     }
 
 }
