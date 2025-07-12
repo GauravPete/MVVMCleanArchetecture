@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.kotlin.dagger.hilt)
+  //  alias(libs.plugins.kotlin.dagger.hilt)
     alias(libs.plugins.kotlin.ksp)
     id("com.google.gms.google-services")
 
@@ -73,8 +73,8 @@ dependencies {
     annotationProcessor(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
     //Dagger-hilt
-    implementation(libs.hilt.android)
-    ksp(libs.hilt.android.compiler)
+  /*  implementation(libs.hilt.android)
+    ksp(libs.hilt.android.compiler)*/
     // retrofit
     implementation(libs.retrofit)
     // gson converter
