@@ -1,1 +1,6 @@
 [jetpackCompose_1.webm](https://github.com/user-attachments/assets/c2621c01-27d8-4a35-a2b5-82ee7f3f7c0c)
+[jetpackCompose_2.webm](https://github.com/user-attachments/assets/f7c53c54-64f7-47f3-883a-b84c20ccd3bf)
+[jetpackCompose_3.webm](https://github.com/user-attachments/assets/1e92339f-f351-438c-9fd1-0493b807d8ed)
+[jetpackCompose_4.webm](https://github.com/user-attachments/assets/53c49979-3a47-4654-a3d1-a0e438b1c31d)
+[jetpackCompose_5.webm](https://github.com/user-attachments/assets/8ba6997b-d5c9-446a-a3f2-cd167660a93a)
+[jetpackCompose_6.webm](https://github.com/user-attachments/assets/ca6c35fd-3c57-4e84-beb2-df297efabc4a)
