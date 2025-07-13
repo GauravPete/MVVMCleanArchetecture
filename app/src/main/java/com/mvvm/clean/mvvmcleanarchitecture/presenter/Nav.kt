@@ -12,11 +12,11 @@ import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.ExpandedCard
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.FilterListScreen
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.GradientButtons
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.LoginScreen
-import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.LoginScreen2
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.MaxCharLimitTextField
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.OTPScreen
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.PasswordTextField
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.TextField_demo
+import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.TopAppBarScreen
 
 @Composable
 fun Nav() {
@@ -34,7 +34,7 @@ fun Nav() {
         composable("AnimatedCoundDown") { AnimatedCountDown() }
         composable("OTPScreen") { OTPScreen() }
         composable("LoginScreen") { LoginScreen() }
-        composable("LoginScreen2") { LoginScreen2() }
+        composable("TopAppBarScreen") { TopAppBarScreen() }
     }
 
 }
