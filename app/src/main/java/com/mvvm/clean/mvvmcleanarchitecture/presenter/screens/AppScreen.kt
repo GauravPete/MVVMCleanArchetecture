@@ -82,6 +82,8 @@ fun ListItem(item: String, navController: NavHostController) {
                     navController.navigate("LoginScreen")
                 }else if(item == "TopAppBar Screen") {
                     navController.navigate("TopAppBarScreen")
+                }else if (item == "Badge Screen") {
+                    navController.navigate("BadgeScreen")
                 }
             },
     )
@@ -116,6 +118,7 @@ fun getListData(): List<String> {
         "Animated Count Down",
         "OTP Screen",
         "Login Screen",
-        "TopAppBar Screen"
+        "TopAppBar Screen",
+        "Badge Screen"
     )
 }

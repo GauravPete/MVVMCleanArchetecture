@@ -7,6 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.AnimatedCountDown
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.AppScreen
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.BackgroundIndicator
+import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.BadgeScreen
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.CoilImageLib
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.ExpandedCard
 import com.mvvm.clean.mvvmcleanarchitecture.presenter.screens.FilterListScreen
@@ -35,6 +36,7 @@ fun Nav() {
         composable("OTPScreen") { OTPScreen() }
         composable("LoginScreen") { LoginScreen() }
         composable("TopAppBarScreen") { TopAppBarScreen() }
+        composable("BadgeScreen") { BadgeScreen() }
     }
 
 }
